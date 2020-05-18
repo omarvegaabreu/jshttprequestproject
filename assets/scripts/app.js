@@ -3,7 +3,6 @@ const postTemplate = document.getElementById("single-post");
 const form = document.querySelector("#new-post form");
 const fetchButton = document.querySelector("#available-posts button");
 const postList = document.querySelector("ul");
-// console.log(fetchButton);
 
 function httpRequest(method, url, data) {
   return fetch(url, {
@@ -30,7 +29,6 @@ function httpRequest(method, url, data) {
 }
 
 async function fetchPosts() {
-  // console.log("fetch");
   try {
     const responseData = await httpRequest(
       "GET",
